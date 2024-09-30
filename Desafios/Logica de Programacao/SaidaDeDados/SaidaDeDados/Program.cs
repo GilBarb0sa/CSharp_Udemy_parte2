@@ -263,37 +263,187 @@ namespace SaidaDeDados
             //}
 
             //Resolução do Professor, ele pensou de outra forma a esquematização!
-            double salario = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+            //double salario = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
 
-            double imposto;
-            if (salario <= 2000.0)
-            {
-                imposto = 0.0;
-            }
-            else if (salario <= 3000.0)
-            {
-                imposto = (salario - 2000.0) * 0.08;
-            }
-            else if (salario <= 4500.0)
-            {
-                imposto = (salario - 3000.0) * 0.18 + 1000.0 * 0.08;
-            }
-            else
-            {
-                imposto = (salario - 4500.0) * 0.28 + 1500.0 * 0.18 + 1000.0 * 0.08;
-            }
+            //double imposto;
+            //if (salario <= 2000.0)
+            //{
+            //    imposto = 0.0;
+            //}
+            //else if (salario <= 3000.0)
+            //{
+            //    imposto = (salario - 2000.0) * 0.08;
+            //}
+            //else if (salario <= 4500.0)
+            //{
+            //    imposto = (salario - 3000.0) * 0.18 + 1000.0 * 0.08;
+            //}
+            //else
+            //{
+            //    imposto = (salario - 4500.0) * 0.28 + 1500.0 * 0.18 + 1000.0 * 0.08;
+            //} 
 
-            if (imposto == 0.0)
-            {
-                Console.WriteLine("Isento");
-            }
-            else
-            {
-                Console.WriteLine("R$ " + imposto.ToString("F2", CultureInfo.InvariantCulture));
-            }
-
-
+            //if (imposto == 0.0)
+            //{
+            //    Console.WriteLine("Isento");
+            //}
+            //else
+            //{
+            //    Console.WriteLine("R$ " + imposto.ToString("F2", CultureInfo.InvariantCulture));
+            //}
             #endregion
+
+            #region Funções (sintaxe)
+            //Console.WriteLine("Digite três números:");
+            //int n1 = int.Parse(Console.ReadLine());
+            //int n2 = int.Parse(Console.ReadLine());
+            //int n3 = int.Parse(Console.ReadLine());
+            //double resultado = Maior(n1, n2, n3);
+            //Console.WriteLine("Maior = " + resultado);
+            #endregion
+
+            #region Estrutura de Repetição (While)
+
+            //Console.Write("Digite um número: ");
+            //double x = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+
+            //while (x >= 0.0)
+            //{
+            //    double raiz = Math.Sqrt(x);
+            //    Console.WriteLine(raiz.ToString("F3", CultureInfo.InvariantCulture));
+            //    Console.Write("Digite outro número: ");
+            //    x = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+            //}
+            //Console.WriteLine("Número negativo");
+            #endregion
+
+            #region Exercícios de Fixação - While
+            //Exercício 1
+            //int senhaCerta = 2002;
+            //Console.Write("Digite a senha de acesso:");
+            //int senha = int.Parse(Console.ReadLine());
+            //while (senha != senhaCerta)
+            //{
+            //    Console.WriteLine("Senha Invalida!");
+            //    int s = int.Parse(Console.ReadLine());
+            //    senha = s;
+            //}
+            //Console.WriteLine("Acesso Permitido!");
+
+            //Exercício 2
+            //Console.Write("Digite o valor do vetor x e y: ");
+            //string[] vet = Console.ReadLine().Split(' ');
+            //int a = int.Parse(vet[0]);
+            //int b = int.Parse(vet[1]);
+            //while(a != 0 && b != 0)
+            //{
+
+            //    if(a > 0 && b > 0)
+            //    {
+            //        Console.WriteLine("Primeiro Quadrante.");
+            //    }
+            //    else if(a > 0 && b < 0)
+            //    {
+            //        Console.WriteLine("Segundo Quadrante.");
+            //    }
+            //    else if(a < 0 && b < 0)
+            //    {
+            //        Console.WriteLine("Terceiro Quadrante.");
+            //    }
+            //    else if(a < 0 && b > 0)
+            //    {
+            //        Console.WriteLine("Quarto Quadrante.");
+            //    }
+            //    Console.WriteLine("--------------------------------");
+            //    Console.Write("Digite o valor do vetor x e y: ");
+            //    string[] n = Console.ReadLine().Split(' ');
+            //    int x = int.Parse(n[0]);
+            //    int y = int.Parse(n[1]);
+            //    a = x;
+            //    b = y;
+            //}
+            //Console.WriteLine("Existe um número nulo!");
+
+            //Exercício 3
+            //Console.Write("Digite um número: ");
+            //int n = int.Parse(Console.ReadLine());
+            //while(n != 4)
+            //{
+            //    if(n == 1) 
+            //    {
+            //        Console.WriteLine("Alcool: 1");
+            //    }
+            //    else if(n ==2 )
+            //    {
+            //        Console.WriteLine("Gasolina: 2");
+            //    }
+            //    else if(n == 3)
+            //    {
+            //        Console.WriteLine("Diesel: 3");
+            //    }
+            //    Console.WriteLine("----------------------------");
+            //    Console.Write("Digite um número: ");
+            //    int numero = int.Parse(Console.ReadLine());
+            //    n = numero;
+            //}
+            //Console.WriteLine("Muito Obrigado!");
+            #endregion
+
+            #region Estrutura de Repetição (For)
+            //Console.Write("Quantos números inteiros você vai digitar? ");
+            //int n = int.Parse(Console.ReadLine());
+            //int soma = 0;
+            //for (int i = 1; i <= n; i++)
+            //{
+            //    Console.Write($"Valor #{i}: ");
+            //    int x = int.Parse(Console.ReadLine());
+            //    soma = soma + x;
+            //}
+            //Console.WriteLine($"O valor total é {soma}");
+            #endregion
+
+            #region Exercícios de Fixação For
+            //Exercício 1
+            //Console.Write("Digite um número e veja seus números ímpares: ");
+            //int n = int.Parse(Console.ReadLine());
+            //for (int i = 1; i <= n; i++)
+            //{
+            //    if (i % 2 == 1)
+            //    {
+            //        Console.WriteLine(i);
+            //    }                
+            //}
+
+            //Exercício 2
+            Console.Write("Quer que veja quantos números: ");
+            int x = int.Parse(Console.ReadLine());
+            Console.WriteLine("----------------------------------------------------------------");
+            for(int i = 1; i <= x; i++)
+            {
+                Console.Write("Digite um número e veja os números que estão entre 10 e 20:  ");
+                int vet = int.Parse(Console.ReadLine());                
+            }
+            #endregion
+
+
+        }
+
+        static int Maior(int a, int b, int c)
+        {
+            int m;
+            if (a > b && a > c)
+            {
+                m = a;
+            }
+            else if (b > c)
+            {
+                m = b;
+            }
+            else
+            {
+                m = c;
+            }
+            return m;
         }
     }
 }
