@@ -418,11 +418,27 @@ namespace SaidaDeDados
             Console.Write("Quer que veja quantos números: ");
             int x = int.Parse(Console.ReadLine());
             Console.WriteLine("----------------------------------------------------------------");
+            int dentroIntervalo = 0;
+            int foraIntervalo = 0;
             for(int i = 1; i <= x; i++)
             {
                 Console.Write("Digite um número e veja os números que estão entre 10 e 20:  ");
-                int vet = int.Parse(Console.ReadLine());                
+                int vet = int.Parse(Console.ReadLine());
+                // Verifica se o número está entre 10 e 20
+                if (vet >= 10 && vet <= 20)
+                {
+                    dentroIntervalo++;
+                }
+                else
+                {
+                    foraIntervalo++;
+                }
             }
+            // Exibe os resultados
+            Console.WriteLine("----------------------------------------------------------------");
+            Console.WriteLine($"Números entre 10 e 20: {dentroIntervalo}");
+            Console.WriteLine($"Números fora do intervalo de 10 e 20: {foraIntervalo}");
+
             #endregion
 
 
