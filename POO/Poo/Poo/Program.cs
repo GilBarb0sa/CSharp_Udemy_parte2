@@ -9,9 +9,11 @@ namespace GerenciamentoDeEstoque
         {
             Produto p = new Produto("TV", 500.00, 10);
 
-            p.SetNome("Tv 4k");
-
-            Console.WriteLine(p.GetNome());  //Minuto 11
+            p.Nome = "Tv 4k";
+            
+            Console.WriteLine(p.Nome); 
+            Console.WriteLine(p.Preco);
+            Console.WriteLine(p.Quantidade);
         }
     }
 }
