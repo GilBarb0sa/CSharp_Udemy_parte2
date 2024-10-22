@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Globalization;
 
 namespace Banco
@@ -16,7 +12,7 @@ namespace Banco
         public int NumeroConta(int conta)
         {
             Conta = conta;
-            return Conta;
+            return Conta; 
         }
 
         public void DepositoSemSaldo()
