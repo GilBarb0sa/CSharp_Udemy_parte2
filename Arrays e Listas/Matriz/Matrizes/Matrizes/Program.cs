@@ -28,14 +28,14 @@ namespace Matrizes
             }
 
             Console.WriteLine("Main Diagonal: ");
-            for (int i = 0; i < n; i++)
+            for (int i = 0; i < n; i++)   //For para exibir uma matriz na diagonal
             {
                 Console.Write(mat[i, i] + " ");
             }
             Console.WriteLine();
 
             int count = 0;
-            for (int i = 0; i < n; i++)
+            for (int i = 0; i < n; i++)  //Este for é utilizado para contar quantos números negativo tem nesta matriz
             {
                 for (int j = 0; j < n; j++)
                 {

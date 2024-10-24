@@ -9,9 +9,9 @@ namespace SalarioDosFuncionarios
         static void Main(string[] args)
         {
             Console.Write("How many employees will be registered? ");
-            int n = int.Parse(Console.ReadLine());
+            int n = int.Parse(Console.ReadLine());  //Vai ser a quantidade de funcionario registrado
 
-            List<Employee> list = new List<Employee>();
+            List<Employee> list = new List<Employee>(); //instancia uma lista de funcionario
 
             for (int i = 1; i < n+1; i++)
             {
@@ -28,14 +28,14 @@ namespace SalarioDosFuncionarios
 
             Console.WriteLine();
             Console.Write("Enter the employee id that will have salary increase: ");
-            int searchId = int.Parse(Console.ReadLine());
+            int searchId = int.Parse(Console.ReadLine());  //Pelo id adiciona um aumento de salario
 
-            Employee emp = list.Find(x => x.Id == searchId);  // Procura na lista um Id semelhante a do solicitado searchId
+            Employee emp = list.Find(x => x.Id == searchId);  // Procura na lista um Id semelhante a do solicitado em searchId
             if (emp != null) //Se for diferente de nulo, faz a ação abaixo
             {
                 Console.Write("Enter the percentage: ");
                 double percentage = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
-                emp.IncreaseSalary(percentage);
+                emp.IncreaseSalary(percentage); //utiliza o metodo criado na classe Employee
             }
             else
             {
@@ -43,8 +43,8 @@ namespace SalarioDosFuncionarios
             }
 
             Console.WriteLine();
-            Console.WriteLine("Update list of employees");
-            foreach (Employee obj in list)
+            Console.WriteLine("Update list of employees: ");
+            foreach (Employee obj in list)  //Pega a lista e coloca as informações na Classe Employee no obj e faz uma varreuda apresentando o conteudo conforme o override da classe
             {
                 Console.WriteLine(obj);
             }
