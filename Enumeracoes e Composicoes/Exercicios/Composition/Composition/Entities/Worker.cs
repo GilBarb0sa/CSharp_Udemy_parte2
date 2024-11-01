@@ -6,7 +6,7 @@ namespace Composition.Entities
     class Worker
     {
         public string Name { get; set; }
-        public WorkerLevel Level { get; set; }
+        public WorkerLevel Level { get; set; }  //Enumereção
         public double BaseSalary { get; set; }
         public Department Department { get; set; }
         public List<HourContract> Contracts { get; set; } = new List<HourContract>();
@@ -15,13 +15,14 @@ namespace Composition.Entities
         {
         }
 
+        //Não associa para muitos como List no construtor do objeto, pois nõ é usual!
         public Worker(string name, WorkerLevel level, double baseSalary, Department department)
         {
             Name = name;
             Level = level;
             BaseSalary = baseSalary;
             Department = department;
-        }
+        }    
 
         public void AddContract(HourContract contract)
         {
