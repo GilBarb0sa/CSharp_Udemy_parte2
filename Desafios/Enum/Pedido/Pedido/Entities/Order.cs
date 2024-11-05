@@ -47,7 +47,7 @@ namespace Pedido.Entities
         public override string ToString()
         {
             StringBuilder sb = new StringBuilder();
-            sb.AppendLine("Order moment: " + Moment.ToString("dd//MM/yyyy HH:mm:ss"));
+            sb.AppendLine("Order moment: " + Moment.ToString("dd//MM/yyyy HH:mm:ss"));  //mascara de formatação
             sb.AppendLine("Order status: " + Status);
             sb.AppendLine("Cliente: " + Client);
             sb.AppendLine("Order items:");
