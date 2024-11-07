@@ -9,7 +9,7 @@ namespace Course
     {
         static void Main(string[] args)
         {
-            List<Product> list = new List<Product>();
+            List<Product> list = new List<Product>();  //Instancia uma lista de product
 
             Console.Write("Enter the number of products: ");
             int n = int.Parse(Console.ReadLine());

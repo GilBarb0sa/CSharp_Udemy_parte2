@@ -21,7 +21,7 @@ namespace Course.Entities
             return Price + CustomsFee;
         }
 
-        public override string PriceTag()
+        public override string PriceTag() //Sobrescreve o metodo que esta declarado no Product
         {
             return Name
                 + " $ "

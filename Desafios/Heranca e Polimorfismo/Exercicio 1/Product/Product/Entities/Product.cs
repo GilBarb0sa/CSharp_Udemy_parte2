@@ -17,7 +17,7 @@ namespace Course.Entities
             Price = price;
         }
 
-        public virtual string PriceTag()
+        public virtual string PriceTag()  //Declara o metodo com virtual para sobrescrever em outra classe
         {
             return Name + " $ " + Price.ToString("F2", CultureInfo.InvariantCulture);
         }
