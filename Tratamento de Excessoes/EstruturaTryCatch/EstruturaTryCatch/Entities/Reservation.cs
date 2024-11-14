@@ -1,4 +1,5 @@
 ﻿using System;
+using EstruturaTryCatch.Entities.Exceptions;
 
 namespace EstruturaTryCatch.Entities
 {
@@ -21,14 +22,25 @@ namespace EstruturaTryCatch.Entities
 
         public int Duration()
         {
-            TimeSpan duration = CheckOut.Subtract(CheckIn);  //pega a diferença de um instante e outro
+            TimeSpan duration = CheckOut.Subtract(CheckIn);  //pega a diferença de um instante do outro
             return (int)duration.TotalDays;  //TotalDays é um double, ai faz um casting para retornar um inteiro.
         }
 
-        public void UpdateDates(DateTime checkIn, DateTime chekOut)
+        public string UpdateDates(DateTime checkIn, DateTime checkOut)
         {
+            DateTime now = DateTime.Now;
+            if (checkIn < now || checkOut < now)
+            {
+                throw new DomainException("Reservation dates for update must be future dates");
+            }
+            if (checkOut <= checkIn)
+            {
+                throw new DomainException("Check-out date must be after check-in dates");
+            }
+
             CheckIn = checkIn;
-            CheckOut = chekOut;
+            CheckOut = checkOut;
+            return null;
         }
 
         public override string ToString()
