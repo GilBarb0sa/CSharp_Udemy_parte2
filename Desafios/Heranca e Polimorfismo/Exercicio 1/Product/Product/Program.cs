@@ -46,7 +46,6 @@ namespace Course
             foreach (Product prod in list)
             {
                 Console.WriteLine(prod.PriceTag());
-
             }
         }
     }
