@@ -14,7 +14,7 @@ namespace TrabComArquivos
 
             //try
             //{   
-            //    //Cria um nome arqruivo semelhante, só alterando o nome do arquivo
+            //    //Cria um nome arquivo semelhante, só alterando o nome do arquivo
             //    FileInfo fileInfo = new FileInfo(sourcePath);
             //    fileInfo.CopyTo(targetPath);
             //    string[] lines = File.ReadAllLines(sourcePath); //puxa a info no arquivo e apresenta em tela
