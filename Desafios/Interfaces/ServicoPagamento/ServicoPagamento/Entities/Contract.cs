@@ -15,7 +15,7 @@ namespace ServicoPagamento.Entities
             Number = number;
             Date = date;
             TotalValue = totalValue;
-            Installments = new List<Installment>();
+            Installments = new List<Installment>();  //Inicializa a lista de parcelas como uma nova lista vazia 
         }
 
         public void AddInstallment(Installment installment)  //Add uma parcela a lista
