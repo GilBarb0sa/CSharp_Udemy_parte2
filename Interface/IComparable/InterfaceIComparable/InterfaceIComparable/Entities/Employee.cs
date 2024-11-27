@@ -20,15 +20,14 @@ namespace InterfaceIComparable.Entities
             return Name + ", " + Salary.ToString("F2", CultureInfo.InvariantCulture);
         }
 
-        public int CompareTo(object obj)
+        public int CompareTo(object obj)  //Esse método é a implementação da interface IComparable
         {
             if (!(obj is Employee))
             {
                 throw new ArgumentException("Comparing error: argument is not Employee");
             }
-            Employee other = obj as Employee;
+            Employee other = obj as Employee;  //Cast para Employee: O objeto obj é convertido para Employee com o operador as. Isso é seguro porque já foi verificado que o tipo é Employee.
             return Name.CompareTo(other.Name);
-
         }
     }
 }
