@@ -21,6 +21,8 @@ namespace Restricoes.Entities
                 + Price.ToString("F2", CultureInfo.InvariantCulture);
         }
 
+        //Esse método é útil quando você deseja ordenar ou comparar objetos da classe Product,
+        //especialmente em coleções que exigem uma ordem, como listas ou arrays.
         public int CompareTo(object obj)
         {
             if (!(obj is Product))
