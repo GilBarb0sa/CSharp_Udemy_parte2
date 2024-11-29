@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.35229.62
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ColecoesHash", "ColecoesHash\ColecoesHash.csproj", "{328BB4FA-7C5A-4424-89B2-838F4D4136BB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{328BB4FA-7C5A-4424-89B2-838F4D4136BB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{328BB4FA-7C5A-4424-89B2-838F4D4136BB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{328BB4FA-7C5A-4424-89B2-838F4D4136BB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{328BB4FA-7C5A-4424-89B2-838F4D4136BB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D84CD454-E45C-449D-B655-6E7599C3191C}
+	EndGlobalSection
+EndGlobal
