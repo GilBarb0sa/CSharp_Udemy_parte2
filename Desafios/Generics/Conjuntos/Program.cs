@@ -28,7 +28,7 @@ namespace Conjuntos
             Console.Write("How many students for course C? ");
             n = int.Parse(Console.ReadLine());
             for (int i = 0; i < n; i++) {
-                int cod = int.Parse(Console.ReadLine());
+                int cod = int.Parse(Console.ReadLine()); 
                 courseC.Add(cod);
             }
 
